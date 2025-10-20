@@ -37,8 +37,9 @@ Hey, Netology
 - имя контейнера "ФИО-custom-nginx-t2"
 - контейнер работает в фоне
 - контейнер опубликован на порту хост системы 127.0.0.1:8080
-- 
-  ![Image alt](https://github.com/rrr89817384657-collab/Docker_Compose/raw/main/img/Снимок экрана 2025-10-19 150629.png)
+  
+  ![Image alt](https://github.com/rrr89817384657-collab/Docker_Compose/raw/main/img/Снимок%20экрана%202025-10-19%20150629.png)
+
   
 2. Не удаляя, переименуйте контейнер в "custom-nginx-t2"
 3. Выполните команду ```date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html```
