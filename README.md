@@ -40,12 +40,18 @@ Hey, Netology
   
   ![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/1.png)
 
-  
 2. Не удаляя, переименуйте контейнер в "custom-nginx-t2"
-3. Выполните команду ```date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html```
-4. Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
 
-В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
+  ![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/2.png)
+
+4. Выполните команду ```date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html```
+
+![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/3.png)
+  
+6. Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
+
+![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/4.png)
+
 
 
 ## Задача 3
@@ -62,7 +68,6 @@ Hey, Netology
 11. * Это дополнительное, необязательное задание. Попробуйте самостоятельно исправить конфигурацию контейнера, используя доступные источники в интернете. Не изменяйте конфигурацию nginx и не удаляйте контейнер. Останавливать контейнер можно. [пример источника](https://www.baeldung.com/linux/assign-port-docker-container)
 12. Удалите запущенный контейнер "custom-nginx-t2", не останавливая его.(воспользуйтесь --help или google)
 
-В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
 ## Задача 4
 
