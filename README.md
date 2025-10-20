@@ -139,9 +139,19 @@ services:
 
 И выполните команду "docker compose up -d". Какой из файлов был запущен и почему? (подсказка: https://docs.docker.com/compose/compose-application-model/#the-compose-file )
 
+![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/19.png)
+Был запущен файл compose.yaml. Compose использует файлы в таком порядке предпочтения: compose.yaml, затем compose.yml, а старые docker-compose.yaml и docker-compose.yml поддерживаются для совместимости, но если есть compose.yaml, то он будет выбран, а остальные проигнорированы.
+
+
 2. Отредактируйте файл compose.yaml так, чтобы были запущенны оба файла. (подсказка: https://docs.docker.com/compose/compose-file/14-include/)
 
+![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/20.png)
+
 3. Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry. Дополнительная документация: https://distribution.github.io/distribution/about/deploying/
+
+![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/22.png)
+![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/23.png)
+
 4. Откройте страницу "https://127.0.0.1:9000" и произведите начальную настройку portainer.(логин и пароль адмнистратора)
 5. Откройте страницу "http://127.0.0.1:9000/#!/home", выберите ваше local  окружение. Перейдите на вкладку "stacks" и в "web editor" задеплойте следующий компоуз:
 
@@ -156,7 +166,22 @@ services:
 ```
 6. Перейдите на страницу "http://127.0.0.1:9000/#!/2/docker/containers", выберите контейнер с nginx и нажмите на кнопку "inspect". В представлении <> Tree разверните поле "Config" и сделайте скриншот от поля "AppArmorProfile" до "Driver".
 
+![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/24.png)
+
 7. Удалите любой из манифестов компоуза(например compose.yaml).  Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
+
+WARN[0000] /root/task5/docker-compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+В новых версиях Docker Compose атрибут version устарел и игнорируется. Нужно удалить его из compose файла.
+
+
+WARN[0000] Found orphan containers ([task5-portainer-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.
+Остался запущенный контейнер, которого нет в файле compose.
+
+
+![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/23.png)
+
+
+
 
 
 
