@@ -38,7 +38,7 @@ Hey, Netology
 - контейнер работает в фоне
 - контейнер опубликован на порту хост системы 127.0.0.1:8080
   
-  ![Image alt](https://github.com/rrr89817384657-collab/Docker_Compose/raw/main/img/1.png)
+  ![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/1.png)
 
   
 2. Не удаляя, переименуйте контейнер в "custom-nginx-t2"
