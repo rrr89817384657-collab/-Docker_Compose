@@ -140,7 +140,7 @@ services:
 И выполните команду "docker compose up -d". Какой из файлов был запущен и почему? (подсказка: https://docs.docker.com/compose/compose-application-model/#the-compose-file )
 
 ![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/19.png)
-Был запущен файл compose.yaml. Compose использует файлы в таком порядке предпочтения: compose.yaml, затем compose.yml, а старые docker-compose.yaml и docker-compose.yml поддерживаются для совместимости, но если есть compose.yaml, то он будет выбран, а остальные проигнорированы.
+Был запущен файл compose.yaml. Compose использует файлы в таком порядке: compose.yaml, затем compose.yml, а старые docker-compose.yaml и docker-compose.yml поддерживаются для совместимости, но если есть compose.yaml, то он будет выбран, а остальные проигнорированы.
 
 
 2. Отредактируйте файл compose.yaml так, чтобы были запущенны оба файла. (подсказка: https://docs.docker.com/compose/compose-file/14-include/)
@@ -178,7 +178,7 @@ WARN[0000] Found orphan containers ([task5-portainer-1]) for this project. If yo
 Остался запущенный контейнер, которого нет в файле compose.
 
 
-![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/23.png)
+![Image alt](https://github.com/rrr89817384657-collab/-Docker_Compose/blob/main/img/26.png)
 
 
 
